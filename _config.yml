@@ -1,6 +1,6 @@
 # Dependencies
 markdown:            redcarpet
-highlighter:         pygments
+highlighter:         rouge
 
 # Permalinks
 #
@@ -24,3 +24,4 @@ author:
 
 # Custom vars
 version:             1.0.0
+encoding:			 utf-8
