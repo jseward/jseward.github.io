@@ -1,0 +1,16 @@
+What I really need to track is WHO deactivated a particular match search. And handle multiple deactivations properly. In this case.
+
+Scrimmage2vs2 Match Search (A)
+
+Deactivated by Scrimmage2vs2 (A) - upon the scrimmage match forming
+Deactivated by Normal5vsAI (B) - upon normal match forming
+Attemp Reactivated by Scrimmage2vs2 (A) - auto requeue upon scrimmage match ending, do nothing here as deactivated by both A and B, remove reference to A
+Attemp Reactivated by Normal5vsAI (B) - upon normal match assembly failing, requeue here as only deactivated by B now
+
+Normal5vsAI Match Search (B)
+
+Deactivated by Normal5vsAI (B) - upon normal match forming
+Attemp Reactivated by Scrimmage2vs2 (A) - upon scrimmage match ending, do nothing here as not deactivated by A
+Attemp Reactivated by Normal5vsAI (B) - upon normal match assembly failing, requeue here
+
+
