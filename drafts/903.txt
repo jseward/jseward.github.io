@@ -13,4 +13,13 @@ Deactivated by Normal5vsAI (B) - upon normal match forming
 Attemp Reactivated by Scrimmage2vs2 (A) - upon scrimmage match ending, do nothing here as not deactivated by A
 Attemp Reactivated by Normal5vsAI (B) - upon normal match assembly failing, requeue here
 
+Implementation wise I use a Redis set to store all MatchSearchIds responsible for deactivating a specific MatchSearch now.
+
+Bug fixed, and the match making system is more robust and stable internally to handle other edge cases.
+
+
+
+<Paste code for ReactivateAllLinkedMatchSearches here>
+
+
 
